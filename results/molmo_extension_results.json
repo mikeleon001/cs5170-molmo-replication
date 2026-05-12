@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "model": "allenai/Molmo-7B-D-0924",
+    "benchmark": "VQAv2 validation (200 samples)",
+    "paper_reported_vqav2": 77.3,
+    "replication_accuracy": 69.17,
+    "extension_rag_accuracy": 70.0,
+    "delta": 0.83,
+    "n_samples": 200
+  },
+  "rag_results": []
+}

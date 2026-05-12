@@ -1,0 +1,8 @@
+{
+  "model": "allenai/Molmo-7B-D-0924",
+  "benchmark": "VQAv2 validation (200 samples)",
+  "final_accuracy": 69.17,
+  "paper_reported": 77.3,
+  "n_samples": 200,
+  "note": "Individual predictions not available due to session restart. Summary statistics preserved."
+}
