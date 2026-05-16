@@ -1,0 +1,9 @@
+transformers==4.45.2
+accelerate
+einops
+timm
+pillow
+datasets
+rank_bm25
+torch
+torchvision
