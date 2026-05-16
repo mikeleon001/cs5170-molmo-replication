@@ -2,13 +2,15 @@
 
 **Team:** Mihail Chitorog, Eduardo Gaxiola, Sunjay Guttikonda  
 **Course:** CS 5170 Natural Language Processing — Cal Poly Pomona  
-**Paper:** *Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Multimodal Models* (AI2, 2024)
+**Paper:** *Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Multimodal Models* (AI2, 2024)  
+**Demo Video:** https://youtu.be/zfEgOsOgEnQ  
+**GitHub:** https://github.com/mikeleon001/cs5170-molmo-replication
 
 ---
 
 ## Overview
 
-This repository contains our replication and extension of the Molmo multimodal language model. We evaluate Molmo-7B-D on the VQAv2 benchmark and propose a retrieval-augmented extension using BM25.
+This repository contains our replication and extension of the Molmo multimodal language model. We evaluate Molmo-7B-D on the VQAv2 benchmark and implement a retrieval-augmented extension using BM25.
 
 ## Results
 
@@ -37,7 +39,8 @@ This approach yields a +0.83% improvement over the baseline on our 200-sample ev
 
 ```
 cs5170-molmo-replication/
-├── molmo_replication.ipynb   # Main notebook (replication + extension)
+├── molmo_replication.ipynb          # Main notebook (replication + extension)
+├── requirements.txt                 # Python dependencies
 ├── results/
 │   ├── molmo_replication_results.json   # Replication evaluation results
 │   └── molmo_extension_results.json     # RAG extension results
@@ -48,18 +51,13 @@ cs5170-molmo-replication/
 
 - Python 3.10+
 - Google Colab Pro (A100 GPU recommended)
-- See notebook Cell 2 for full dependency list
 
-Key packages:
+Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
-transformers==4.45.2
-accelerate
-einops
-timm
-pillow
-datasets
-rank_bm25
-```
+
+Key packages: `transformers==4.45.2`, `accelerate`, `einops`, `timm`, `pillow`, `datasets`, `rank_bm25`
 
 ## How to Run
 
